@@ -1,3 +1,5 @@
+// tailwind.config.js
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["*.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -18,8 +20,15 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
       },
       colors: {
-        'primary':'#FD3D57'
-      }
+        primary: "#FD3D57",
+        secondary: "#20263a",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      display: ["group-hover"],
+      visibility: ["group-hover"],
     },
   },
   plugins: [],
