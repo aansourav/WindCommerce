@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         index: "index.html",
         shop: "shop.html",
+        view: "view.html",
       },
     },
   },
