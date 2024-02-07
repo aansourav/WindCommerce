@@ -14,6 +14,7 @@ export default defineConfig({
         profileinfo: "profile-info.html",
         manageaddress: "manage-address.html",
         ordercomplete: "order-complete.html",
+        register: "register.html",
       },
     },
   },
