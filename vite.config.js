@@ -11,6 +11,7 @@ export default defineConfig({
         login: "login.html",
         account: "account.html",
         checkout: "checkout.html",
+        profileinfo: "profile-info.html",
       },
     },
   },
