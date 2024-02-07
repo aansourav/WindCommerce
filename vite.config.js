@@ -10,6 +10,7 @@ export default defineConfig({
         view: "view.html",
         login: "login.html",
         account: "account.html",
+        checkout: "checkout.html",
       },
     },
   },
