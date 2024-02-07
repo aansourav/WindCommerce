@@ -13,6 +13,7 @@ export default defineConfig({
         checkout: "checkout.html",
         profileinfo: "profile-info.html",
         manageaddress: "manage-address.html",
+        ordercomplete: "order-complete.html",
       },
     },
   },
