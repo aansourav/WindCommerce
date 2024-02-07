@@ -15,6 +15,7 @@ export default defineConfig({
         manageaddress: "manage-address.html",
         ordercomplete: "order-complete.html",
         register: "register.html",
+        wishlist: "wishlist.html",
       },
     },
   },
