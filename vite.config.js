@@ -8,6 +8,7 @@ export default defineConfig({
         index: "index.html",
         shop: "shop.html",
         view: "view.html",
+        login: "login.html",
       },
     },
   },
