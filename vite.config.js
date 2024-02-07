@@ -17,6 +17,7 @@ export default defineConfig({
         register: "register.html",
         wishlist: "wishlist.html",
         cart: "cart.html",
+        changepassword: "change-password.html",
       },
     },
   },
