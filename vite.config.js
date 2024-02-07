@@ -12,6 +12,7 @@ export default defineConfig({
         account: "account.html",
         checkout: "checkout.html",
         profileinfo: "profile-info.html",
+        manageaddress: "manage-address.html",
       },
     },
   },
