@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wind Commerce</title>
+  </head>
+  <body>
+    <!-- ---------------- HEADER ------------- -->
+    <header class="py-4 shadow-md bg-white">
+      <div class="container flex items-center justify-between">
+        <!-- ---------- Logo ------- -->
+        <a href="/" class="">
+          <img src="./src/images/logo.png" alt="" class="w-48 flex-shrink-0" />
+        </a>
+        <!-- ---------- Logo end ------- -->
+
+        <!-- ---------- Searchbar ------- -->
+        <div class="w-full xl:max-w-xl lg:max-w-lg lg:flex relative hidden">
+          <span class="absolute left-4 top-3 text-lg text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="pl-12 w-full border border-r-0 border-primary py-3 px-3 rounded-l-md focus:ring-0 focus:border-primary"
+            placeholder="Search"
+          />
+          <button
+            type="submit"
+            class="bg-primary border border-primary text-white px-8 font-medium rounded-r-md hover:bg-transparent hover:text-primary transition"
+          >
+            Search
+          </button>
+        </div>
+        <!-- ---------- Searchbar end ------- -->
+
+        <!-- ---------- Cart Wishlist Account ------- -->
+        <div class="space-x-4 flex items-center">
+          <a
+            href="wishlist.html"
+            class="block text-center text-secondary hover:text-primary transition relative"
+          >
+            <span
+              class="absolute -right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs"
+              >5</span
+            >
+            <div class="text-2xl">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+          </a>
+          <a
+            href="cart.html"
+            class="lg:block text-center text-gray-700 hover:text-primary transition hidden relative"
+          >
+            <span
+              class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs"
+              >3</span
+            >
+            <div class="text-2xl">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+          </a>
+          <a href="account.html" class="block text-center text-gray-700 hover:text-primary transition">
+            <div class="text-2xl">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+          </a>
+        </div>
+        <!-- ---------- Cart Wishlist Account end ------- -->
+      </div>
+    </header>
+    <!-- ------------- HEADER ------------- -->
+
+    <!-------------- NAVBAR --------------->
+    <nav class="bg-secondary hidden lg:block">
+      <div class="container">
+        <div class="flex">
+          <!-- all category -->
+          <div
+            class="px-8 py-4 bg-primary hover:bg-[#d6263d] flex items-center cursor-pointer group relative"
+          >
+            <span class="text-white">
+              <i class="fas fa-bars"></i>
+            </span>
+            <span class="capitalize ml-2 text-white">All categories</span>
+
+            <div
+              class="absolute left-0 top-full w-full bg-white shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300 z-50 divide-y divide-gray-300 divide-dashed"
+            >
+              <!-- single category -->
+              <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                <img src="./src/images/icons/bed.svg" class="w-5 h-5 object-contain" />
+                <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+              </a>
+              <!-- single category end -->
+              <!-- single category -->
+              <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                <img src="./src/images/icons/sofa.svg" class="w-5 h-5 object-contain" />
+                <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+              </a>
+              <!-- single category end -->
+              <!-- single category -->
+              <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                <img src="./src/images/icons/office.svg" class="w-5 h-5 object-contain" />
+                <span class="ml-6 text-gray-600 text-sm">Office</span>
+              </a>
+              <!-- single category end -->
+              <!-- single category -->
+              <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                <img src="./src/images/icons/terrace.svg" class="w-5 h-5 object-contain" />
+                <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+              </a>
+              <!-- single category end -->
+              <!-- single category -->
+              <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                <img src="./src/images/icons/bed-2.svg" class="w-5 h-5 object-contain" />
+                <span class="ml-6 text-gray-600 text-sm">Mattress</span>
+              </a>
+              <!-- single category end -->
+              <!-- single category -->
+              <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                <img src="./src/images/icons/restaurant.svg" class="w-5 h-5 object-contain" />
+                <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+              </a>
+              <!-- single category end -->
+            </div>
+          </div>
+          <!-- all category end -->
+
+          <!-- nav menu -->
+          <div class="flex items-center justify-between flex-grow pl-12">
+            <div class="flex items-center space-x-2 text-base capitalize">
+              <a
+                href="index.html"
+                class="text-gray-200 hover:text-white hover:bg-[#191d26] py-4 px-2 transition"
+                >Home</a
+              >
+              <a
+                href="shop.html"
+                class="text-gray-200 hover:text-white hover:bg-[#191d26] py-4 px-2 transition"
+                >Shop</a
+              >
+              <a href="#" class="text-gray-200 hover:text-white hover:bg-[#191d26] py-4 px-2 transition"
+                >About us</a
+              >
+              <a href="#" class="text-gray-200 hover:text-white hover:bg-[#191d26] py-4 px-2 transition"
+                >Contact us</a
+              >
+            </div>
+            <a
+              href="login.html"
+              class="ml-auto justify-self-end text-gray-200 hover:text-white hover:bg-[#191d26] py-4 px-2 transition"
+            >
+              Login/Register
+            </a>
+          </div>
+          <!-- nav menu end -->
+        </div>
+      </div>
+    </nav>
+    <!-------------- NAVBAR END --------------->
+
+    <!-- Breadcrumb -->
+    <div class="container py-4 flex gap-3 items-center">
+      <a href="index.html" class="text-primary text-base">
+        <i class="fa-solid fa-house-chimney"></i>
+      </a>
+      <span class="text-sm text-gray-400"><i class="fas fa-chevron-right"></i></span>
+      <p class="text-gray-600 font-medium">Shopping Cart</p>
+    </div>
+    <!-- Breadcrumb end -->
+
+    <!-- cart wrapper -->
+    <div class="container lg:grid grid-cols-12 gap-6 items-start pb-16 pt-4">
+      <!-- product cart -->
+      <div class="xl:col-span-9 lg:col-span-8">
+        <!-- cart title -->
+        <div class="bg-gray-200 py-2 pl-12 pr-20 xl:pr-28 mb-4 hidden md:flex">
+          <p class="text-gray-600 text-center">Product</p>
+          <p class="text-gray-600 text-center ml-auto mr-16 xl:mr-24">Quantity</p>
+          <p class="text-gray-600 text-center">Total</p>
+        </div>
+        <!-- cart title end -->
+
+        <!-- shipping carts -->
+        <div class="space-y-4">
+          <!-- single cart -->
+          <div
+            class="flex items-center md:justify-between gap-4 md:gap-6 p-4 border border-gray-200 rounded flex-wrap md:flex-nowrap"
+          >
+            <!-- cart image -->
+            <div class="w-32 flex-shrink-0">
+              <img src="./src/images/products/product3.jpg" class="w-full" />
+            </div>
+            <!-- cart image end -->
+            <!-- cart content -->
+            <div class="md:w-1/3 w-full">
+              <h2 class="text-gray-800 mb-3 xl:text-xl textl-lg font-medium uppercase">Family Mattress</h2>
+              <p class="text-primary font-semibold">$45.00</p>
+              <p class="text-gray-500">Size: M</p>
+            </div>
+            <!-- cart content end -->
+            <!-- cart quantity -->
+            <div class="flex border border-gray-300 text-gray-600 divide-x divide-gray-300">
+              <div class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none">-</div>
+              <div class="h-8 w-10 flex items-center justify-center">4</div>
+              <div class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none">+</div>
+            </div>
+            <!-- cart quantity end -->
+            <div class="ml-auto md:ml-0">
+              <p class="text-primary text-lg font-semibold">$320.00</p>
+            </div>
+            <div class="text-gray-600 hover:text-primary cursor-pointer">
+              <i class="fas fa-trash"></i>
+            </div>
+          </div>
+          <!-- single cart end -->
+          <!-- single cart -->
+          <div
+            class="flex items-center md:justify-between gap-4 md:gap-6 p-4 border border-gray-200 rounded flex-wrap md:flex-nowrap"
+          >
+            <!-- cart image -->
+            <div class="w-32 flex-shrink-0">
+              <img src="./src/images/products/product6.jpg" class="w-full" />
+            </div>
+            <!-- cart image end -->
+            <!-- cart content -->
+            <div class="md:w-1/3 w-full">
+              <h2 class="text-gray-800 mb-3 xl:text-xl textl-lg font-medium uppercase">Rocking Chair</h2>
+              <p class="text-primary font-semibold">$45.00</p>
+              <p class="text-gray-500">Size: M</p>
+            </div>
+            <!-- cart content end -->
+            <!-- cart quantity -->
+            <div class="flex border border-gray-300 text-gray-600 divide-x divide-gray-300">
+              <div class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none">-</div>
+              <div class="h-8 w-10 flex items-center justify-center">4</div>
+              <div class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none">+</div>
+            </div>
+            <!-- cart quantity end -->
+            <div class="ml-auto md:ml-0">
+              <p class="text-primary text-lg font-semibold">$320.00</p>
+            </div>
+            <div class="text-gray-600 hover:text-primary cursor-pointer">
+              <i class="fas fa-trash"></i>
+            </div>
+          </div>
+          <!-- single cart end -->
+        </div>
+        <!-- shipping carts end -->
+      </div>
+      <!-- product cart end -->
+      <!-- order summary -->
+      <div class="xl:col-span-3 lg:col-span-4 border border-gray-200 px-4 py-4 rounded mt-6 lg:mt-0">
+        <h4 class="text-gray-800 text-lg mb-4 font-medium uppercase">ORDER SUMMARY</h4>
+        <div class="space-y-1 text-gray-600 pb-3 border-b border-gray-200">
+          <div class="flex justify-between font-medium">
+            <p>Subtotal</p>
+            <p>$320</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Delivery</p>
+            <p>Free</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Tax</p>
+            <p>Free</p>
+          </div>
+        </div>
+        <div class="flex justify-between my-3 text-gray-800 font-semibold uppercase">
+          <h4>Total</h4>
+          <h4>$320</h4>
+        </div>
+
+        <!-- searchbar -->
+        <div class="flex mb-6">
+          <input
+            type="text"
+            class="pl-4 w-full border border-r-0 border-primary py-2 px-3 rounded-l-md focus:ring-0 focus:border-primary text-sm"
+            placeholder="Coupon"
+          />
+          <button
+            type="submit"
+            class="bg-primary border border-primary text-white px-8 font-medium rounded-r-md hover:bg-transparent hover:text-primary transition text-sm font-roboto"
+          >
+            Apply
+          </button>
+        </div>
+        <!-- searchbar end -->
+
+        <!-- checkout -->
+        <a
+          href="checkout.html"
+          class="bg-primary border border-primary text-white px-4 py-3 font-medium rounded-md uppercase hover:bg-transparent hover:text-primary transition text-sm w-full block text-center"
+        >
+          Process to checkout
+        </a>
+        <!-- checkout end -->
+      </div>
+      <!-- order summary end -->
+    </div>
+    <!-- cart wrapper end -->
+
+    <!-- FOOTER -->
+    <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
+      <div class="container">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <!-- footer text -->
+          <div class="space-y-8 xl:col-span-1">
+            <img class="w-4/6" src="./src/images/logo.png" alt="Company name" />
+            <p class="text-gray-500 text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere rem
+            </p>
+            <div class="flex space-x-6">
+              <a href="#" class="text-gray-400 hover:text-primary">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-primary">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-primary">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-primary">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <!-- footer text end -->
+          <!-- footer links -->
+          <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
+                <div class="mt-4 space-y-4">
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Marketing </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Analytics </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Commerce </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Insights </a>
+                </div>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                <div class="mt-4 space-y-4">
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Pricing </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Documentation </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Guides </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> API Status </a>
+                </div>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                <div class="mt-4 space-y-4">
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> About </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Blog </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Jobs </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Press </a>
+                </div>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                <div class="mt-4 space-y-4">
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Claim </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Privacy </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Policy </a>
+                  <a href="#" class="text-base text-gray-500 hover:text-gray-900 block"> Terms </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer links end -->
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- copyright -->
+    <div class="bg-gray-800 py-4">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">©2024 | Abdullah An-Noor | All Rights Reserved</p>
+        <div>
+          <img src="./src/images/methods.png" class="h-5" />
+        </div>
+      </div>
+    </div>
+    <!-- copyright end -->
+  </body>
+</html>

@@ -16,6 +16,7 @@ export default defineConfig({
         ordercomplete: "order-complete.html",
         register: "register.html",
         wishlist: "wishlist.html",
+        cart: "cart.html",
       },
     },
   },
